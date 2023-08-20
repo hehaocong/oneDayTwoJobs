@@ -387,7 +387,7 @@ lyricsText = \lyricmode {
 %%%%%%%%% It All Goes Together Here %%%%%%%%%%%%%%%%%%%%%%
 
 \book {  % All
-  \bookOutputSuffix "All"
+  \bookOutputSuffix "总谱"
   \header {
     title = "不能说的秘密 (G调) - 总谱"
   }
@@ -422,7 +422,7 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Piano
-  \bookOutputSuffix "Piano"
+  \bookOutputSuffix "钢琴"
   \header {
     title = "不能说的秘密 (G调) - 钢琴谱"
   }
@@ -450,7 +450,7 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Drum and Bass
-  \bookOutputSuffix "DrumBass"
+  \bookOutputSuffix "鼓与贝斯"
   \header {
     title = "不能说的秘密 (G调) - 鼓与贝斯"
   }
@@ -480,7 +480,7 @@ lyricsText = \lyricmode {
 }  
 
 \book {  % Guitar
-  \bookOutputSuffix "Guitar"
+  \bookOutputSuffix "吉他"
   \header {
     title = "不能说的秘密 (G调) - 吉他谱"
   }
@@ -508,7 +508,7 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Midi
-  \bookOutputSuffix "Demo"
+  \bookOutputName "不能说的秘密"
   \score {
     <<
         \new PianoStaff = "piano" \with { instrumentName = "Piano" midiInstrument = "acoustic grand" \RemoveAllEmptyStaves }
