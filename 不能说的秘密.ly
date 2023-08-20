@@ -449,15 +449,41 @@ lyricsText = \lyricmode {
   }
 }
 
-\book {  % Drum and Bass
-  \bookOutputSuffix "鼓与贝斯"
+\book {  % Drum
+  \bookOutputSuffix "鼓"
   \header {
-    title = "不能说的秘密 (G调) - 鼓与贝斯"
+    title = "不能说的秘密 (G调) - 鼓谱"
   }
   \score {
     <<
       \new DrumStaff \with { instrumentName = "Drums" midiInstrument = "standard kit" \RemoveAllEmptyStaves }
       \drumContents 
+      \new JianpuStaff \with { instrumentName = "Vocal" beamExceptions = #'() beatStructure = 1,1,1,1 } \jianpuMusic \new Voice = "vocal" 
+      \vocal
+      \new Lyrics \lyricsto "vocal" 
+      \lyricsText
+    >>
+    \layout {
+      \context { 
+        \Staff 
+      }
+      \context {
+        \Score
+        \override BarNumber.padding = #3
+        \override RehearsalMark.padding = #2
+        skipBars = ##t
+      }
+    }
+  }
+}  
+
+\book {  % Bass
+  \bookOutputSuffix "贝斯"
+  \header {
+    title = "不能说的秘密 (G调) - 贝斯谱"
+  }
+  \score {
+    <<
       \new TabStaff = "bass" \with { instrumentName = "Bass" stringTunings = #bass-tuning \RemoveAllEmptyStaves \tabFullNotation }
       \bass
       \new JianpuStaff \with { instrumentName = "Vocal" beamExceptions = #'() beatStructure = 1,1,1,1 } \jianpuMusic \new Voice = "vocal" 
