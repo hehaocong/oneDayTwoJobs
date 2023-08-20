@@ -15,7 +15,7 @@
 % \paper {
 %   paper-width = 130
 % }
-\version "2.20.0"
+\version "2.24.0"
 #(set-global-staff-size 16)
 \include "english.ly"
 \include "jianpu10a.ly"
@@ -379,6 +379,9 @@ lyricsText = \lyricmode {
 %%%%%%%%% It All Goes Together Here %%%%%%%%%%%%%%%%%%%%%%
 
 \book {  % All
+  \header {
+    title = "不能说的秘密 (G调) - 总谱"
+  }
   \score {
     <<
         \new PianoStaff = "piano" \with { instrumentName = "Piano" midiInstrument = "acoustic grand" \RemoveAllEmptyStaves }
@@ -410,6 +413,9 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Piano
+  \header {
+    title = "不能说的秘密 (G调) - 钢琴谱"
+  }
   \score {
     <<
         \new PianoStaff = "piano" \with { instrumentName = "Piano" midiInstrument = "acoustic grand" \RemoveAllEmptyStaves }
@@ -434,6 +440,9 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Drum and Bass
+  \header {
+    title = "不能说的秘密 (G调) - 鼓与贝斯"
+  }
   \score {
     <<
       \new DrumStaff \with { instrumentName = "Drums" midiInstrument = "standard kit" \RemoveAllEmptyStaves }
@@ -460,6 +469,9 @@ lyricsText = \lyricmode {
 }  
 
 \book {  % Guitar
+  \header {
+    title = "不能说的秘密 (G调) - 吉他谱"
+  }
   \score {
     <<
         \new TabStaff = "guitar" \with { instrumentName = "Guitar" midiInstrument = "overdriven guitar" \RemoveAllEmptyStaves \tabFullNotation }
