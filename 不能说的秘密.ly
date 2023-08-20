@@ -20,6 +20,14 @@
 \include "english.ly"
 \include "jianpu10a.ly"
 
+\paper {
+  #(define fonts
+    (make-pango-font-tree "Noto Serif CJK SC"
+                          "Noto Sans CJK SC"
+                          "Noto Sans Mono CJK SC"
+                          (/ staff-height pt 20)))
+}
+
 
 %% insert chord name style stuff here.
 %jazzChords = { }
