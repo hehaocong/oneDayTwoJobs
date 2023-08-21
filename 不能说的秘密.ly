@@ -387,7 +387,7 @@ lyricsText = \lyricmode {
 %%%%%%%%% It All Goes Together Here %%%%%%%%%%%%%%%%%%%%%%
 
 \book {  % All
-  \bookOutputSuffix "总谱"
+  \bookOutputName "不能说的秘密-总谱"
   \header {
     title = "不能说的秘密 (G调) - 总谱"
   }
@@ -422,7 +422,7 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Piano
-  \bookOutputSuffix "钢琴"
+  \bookOutputName "不能说的秘密-钢琴"
   \header {
     title = "不能说的秘密 (G调) - 钢琴谱"
   }
@@ -450,7 +450,7 @@ lyricsText = \lyricmode {
 }
 
 \book {  % Drum
-  \bookOutputSuffix "鼓"
+  \bookOutputName "不能说的秘密-鼓谱"
   \header {
     title = "不能说的秘密 (G调) - 鼓谱"
   }
@@ -478,7 +478,7 @@ lyricsText = \lyricmode {
 }  
 
 \book {  % Bass
-  \bookOutputSuffix "贝斯"
+  \bookOutputName "不能说的秘密-贝斯"
   \header {
     title = "不能说的秘密 (G调) - 贝斯谱"
   }
@@ -506,7 +506,7 @@ lyricsText = \lyricmode {
 }  
 
 \book {  % Guitar
-  \bookOutputSuffix "吉他"
+  \bookOutputName "不能说的秘密-吉他"
   \header {
     title = "不能说的秘密 (G调) - 吉他谱"
   }
